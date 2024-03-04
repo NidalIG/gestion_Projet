@@ -1,0 +1,119 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruds</title>
+    <link rel="stylesheet" href="cruds.css">
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>crud</h2>
+            <p>PRODUCT MANAGEMENT SYSTEM</p>
+            <script src="cruds.js"></script>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="title" id="titl">
+            <div class="price">
+                <input onkeyup="gettotal()"  type="number" id="price" placeholder="price">
+                <input onkeyup="gettotal()" type="number" id="taxes" placeholder="taxes">
+                <input onkeyup="gettotal()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="gettotal()" type="number" id="discount" placeholder="discount">
+                <small id="total">32525</small>
+            </div>
+            <input type="number" placeholder="count" id="count">
+            <input type="text" placeholder="category" id="category">
+            <button id="submit"> create</button>
+
+        </div>
+        <div class="outputs">
+            <div class="searchBlock">
+                <input type="text" id="search" placeholder="search">
+            </div>
+            <div class="btnSearch">
+                <button id="searchtitle">Search by title</button>
+                <button id="searchcategory">Search by category</button>
+            </div>
+        </div>
+        <div id="deleteall"></div>
+<table>
+    <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>price</th>
+        <th>taxes</th>
+        <th>ads</th>
+        <th>discount</th>
+        <th>total</th>
+        <th>category</th>
+        <th>update</th>
+        <th>delete</th>
+    </tr>
+    <tbody id="tbody">
+        <!-- <tr>
+            <td>1</td>
+            <td>sumsung</td>
+            <td>2000</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>2100</td>
+            <td>phone</td>
+            <td><button id="update">update</button></td>
+            <td><button id="delete">delete</button></td>
+
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>sumsung</td>
+            <td>2000</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>2100</td>
+            <td>phone</td>
+            <td><button id="update">update</button></td>
+            <td><button id="delete">delete</button></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>sumsung</td>
+            <td>2000</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>2100</td>
+            <td>phone</td>
+            <td><button id="update">update</button></td>
+            <td><button id="delete">delete</button></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>sumsung</td>
+            <td>2000</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>2100</td>
+            <td>phone</td>
+            <td><button id="update">update</button></td>
+            <td><button id="delete">delete</button></td>
+        </tr> -->
+    </tbody>
+
+</table>
+
+
+
+
+
+
+    </div>
+    <script src="cruds.js"></script>
+</body>
+</html>
+
+</html>
